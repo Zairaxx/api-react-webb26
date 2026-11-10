@@ -20,7 +20,10 @@ function App() {
   return (
     <>
       <h1 onClick={() => {setShow(!show)}}>React med API</h1>
+      {/* Counter-komponenten använder useEffect */}
       {show && <Counter />}
+
+    {/* {TodoList-komponenten visar API-anrop vid klick */}
       <TodoList/>
     </>
   )
