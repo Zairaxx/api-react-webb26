@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 import Counter from './components/Counter'
+import TodoList from './components/TodoList';
 function App() {
 
   const [show, setShow] = useState(true);
@@ -23,8 +21,7 @@ function App() {
     <>
       <h1 onClick={() => {setShow(!show)}}>React med API</h1>
       {show && <Counter />}
-
-      {todos.map(todo => <li>{todo.title}</li>)}
+      <TodoList/>
     </>
   )
 }
